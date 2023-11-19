@@ -50,7 +50,7 @@ export default function Project({
             ))}
           </ul>
 		  
-		  <div class="flex space-x-4 mb-[1rem] mt-auto">
+		  <div className="flex space-x-4 mb-[1rem] mt-auto">
 			{githubUrl && (
 				<a
 				href={githubUrl}
