@@ -42,17 +42,15 @@ export default function Intro() {
           </motion.div>
 
           <motion.span
-			className="absolute bottom-[1rem] right-[1rem] text-[2rem] hover:text-[1.5rem]"
+			className="absolute bottom-[1rem] right-[1rem] text-[1.75rem] hover:text-[1.5rem]"
       initial={{ opacity: 1, scale: 1 }}
       animate={{
         opacity: 1,
         // scale: 1,
-        // x: [-10, 0, 10], // Keyframes for translateX
         rotate: [-15, 0, 10], // Keyframes for rotate
       }}
       transition={{
         type: "keyframes",
-        stiffness: 125,
         delay: 0.5,
         duration: 2,
         repeat: Infinity,
