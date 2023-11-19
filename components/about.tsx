@@ -18,13 +18,13 @@ export default function About() {
       id="about"
     >
 	<SectionHeading>About Me</SectionHeading>
-	<p class="mb-3">
+	<p className="mb-3">
 	  I'm Syrian, currently living in Egypt. My journey into the world of programming began with the creation of the game Tic Tac Toy, where I discovered my passion for crafting innovative solutions through code. Delving into the intricacies of back-end programming, I've honed my skills with a focus on {" "}
-	  <span class="font-medium">Python, Django, Flask, and Celery</span>. On the frontend, I excel in creating dynamic and responsive interfaces using {" "}
-	  <span class="font-medium">React and Next.js</span>.
+	  <span className="font-medium">Python, Django, Flask, and Celery</span>. On the frontend, I excel in creating dynamic and responsive interfaces using {" "}
+	  <span className="font-medium">React and Next.js</span>.
 	  Over the years, I've accumulated valuable experience in developing robust applications and have successfully provided a multitude of SAAS services.
 	</p>
-	<p class="mb-3">
+	<p className="mb-3">
 	  In Python Django development, I've addressed varied challenges, crafting scalable solutions and utilizing Django's features. I've built RESTful APIs, optimized database performance, and navigated the entire development lifecycle. My proficiency lies in translating business requirements into efficient code, ensuring seamless user experiences.
 	</p>
 
