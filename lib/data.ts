@@ -1,0 +1,122 @@
+import React from "react";
+import { FaReact } from "react-icons/fa";
+
+import { CgWorkAlt } from "react-icons/cg";
+import { LuGraduationCap } from "react-icons/lu";
+import UpworkIcon from "@/components/UpworkIcon";
+
+import corpcommentImg from "@/public/corpcomment.png";
+import rmtdevImg from "@/public/rmtdev.png";
+import wordanalyticsImg from "@/public/wordanalytics.png";
+import SaaSAIPlatform from "@/public/SaaS AI Platform.png";
+import DjangoRESTAPI from "@/public/Django REST API.png";
+
+
+
+export const links = [
+  {
+    name: "Home",
+    hash: "#home",
+  },
+  {
+    name: "About",
+    hash: "#about",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
+  },
+  {
+    name: "Skills",
+    hash: "#skills",
+  },
+  {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
+  },
+] as const;
+
+export const experiencesData = [
+  {
+    title: "freeCodeCamp Certificate",
+    location: "freeCodeCamp · Remote",
+    description:
+      "I earned a certificate in Python and Programming Algorithms, where I acquired valuable skills in building and optimizing algorithms. I delved into Python programming, honing my abilities in problem-solving and algorithmic thinking. The certification covered topics such as data structures, algorithm design, and efficient coding practices, providing a solid foundation for tackling complex programming challenges.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2020",
+  },
+  {
+    title: "Django Developer · Internship · SourceMogul",
+    location: "England, United Kingdom · Remote",
+    description:
+      "I gained hands-on experience as a Django Developer, focusing on building robust data models, working with databases, and implementing advanced RESTful APIs using Django REST Framework. Additionally, I mastered various skills, including Django authentication, background tasks, and API design and deployment, showcasing proficiency in debugging and Python programming.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Jan 2022 - Mar 2022 · 3 mos",
+  },
+
+  {
+    title: "Python/Django Developer",
+    location: "SaveToNotion · Syria",
+    description:
+      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - 2023",
+  },
+  {
+    title: "Full-Stack Developer",
+    location: "UpWork · Remote",
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes Python Django Docker React Next.js and more. I'm open to full-time opportunities.",
+    icon: React.createElement(UpworkIcon),
+    date: "2023 - present",
+  },
+] as const;
+
+export const projectsData = [
+  {
+	title: "SaaS AI Platform",
+	description:
+	  "A state-of-the-art AI SaaS Platform with five AI tools. Powered by the Next.js 13 App Router, our platform will not only be efficient but also user-centric.",
+	tags: ["Tailwind", "React.js", "Next.js", "Prisma", "MySQL"],
+	imageUrl: SaaSAIPlatform,
+	githubUrl: "#",
+	previewUrl: "#",
+  },
+
+  {
+	title: "Django Store API",
+	description:
+	  "Demonstrating proficiency in Python, Docker, Django, MySQL, DRF, signals, Celery, Locust, and Celery Beat, I showcase my ability to craft efficient and scalable RESTful APIs.",
+	tags: ["python", "docker", "django", "mysql", "GRF", "signals", "celery", "locust", "celerybeat"],
+	imageUrl: DjangoRESTAPI,
+	githubUrl: "#",
+	previewUrl: "#",
+  },
+
+] as const;
+
+export const skillsData = [
+  "Python",
+  "Django",
+  "Flask",
+  "MySQL",
+  "PostgreSQL",
+  "MongoDB",
+  "Docker",
+  "Git",
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "TypeScript",
+  "React",
+  "Next.js",
+  "Node.js",
+  "Tailwind",
+  "Prisma",
+  "Express",
+
+] as const;
