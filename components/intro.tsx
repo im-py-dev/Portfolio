@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -13,7 +13,17 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  
+  const [showElement, setShowElement] = useState(false);
 
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowElement(true);
+    }, 1500);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
+  
   return (
     <section
       ref={ref}
@@ -40,25 +50,29 @@ export default function Intro() {
               className="rounded-full object-cover shadow-xl"
             />
           </motion.div>
-
-          <motion.span
-			className="absolute bottom-[1rem] right-[1rem] text-[1.75rem] hover:text-[1.5rem]"
-      initial={{ opacity: 1, scale: 1 }}
-      animate={{
-        opacity: 1,
-        // scale: 1,
-        rotate: [-15, 0, 10], // Keyframes for rotate
-      }}
-      transition={{
-        type: "keyframes",
-        delay: 0.5,
-        duration: 2,
-        repeat: Infinity,
-        repeatType: "reverse",
-            }}
-          >
-            🐍
-          </motion.span>
+		  
+		  
+          {showElement && (
+			<motion.span
+				className="absolute bottom-[1rem] right-[1rem] text-[1.5rem] hover:text-[1.75rem]"
+				initial={{ opacity: 1, scale: 1 }}
+				animate={{
+				opacity: 1,
+				// scale: 1,
+				rotate: [0, 10, -15], // Keyframes for rotate
+				}}
+				transition={{
+				type: "keyframes",
+				delay: 1.5,
+				duration: 2,
+				repeat: Infinity,
+				repeatType: "reverse",
+				}}
+				>
+				🐍
+			</motion.span>
+			)}
+		  
         </div>
       </div>
 
@@ -91,7 +105,7 @@ export default function Intro() {
           }}
         >
           Contact me{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <BsArrowRight className="text-[1.5rem] opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
@@ -100,7 +114,7 @@ export default function Intro() {
           download
         >
           Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          <HiDownload className="text-[1.5rem] opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
@@ -108,7 +122,7 @@ export default function Intro() {
           href="https://www.linkedin.com/in/impydev/"
           target="_blank"
         >
-          <BsLinkedin className="text-[2rem]"/>
+          <BsLinkedin className="text-[1.75rem]"/>
         </a>
 
         <a
@@ -116,7 +130,7 @@ export default function Intro() {
           href="https://github.com/im-py-dev"
           target="_blank"
         >
-          <FaGithubSquare className="text-[2rem]"/>
+          <FaGithubSquare className="text-[1.75rem]"/>
         </a>
       </motion.div>
     </section>
