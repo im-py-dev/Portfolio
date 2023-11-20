@@ -83,8 +83,8 @@ export const projectsData = [
 	  "A state-of-the-art AI SaaS Platform with five AI tools. Powered by the Next.js 13 App Router, our platform will not only be efficient but also user-centric.",
 	tags: ["Tailwind", "React.js", "Next.js", "Prisma", "MySQL"],
 	imageUrl: SaaSAIPlatform,
-	githubUrl: "#",
-	previewUrl: "#",
+	githubUrl: "https://github.com/im-py-dev/BrainerAI",
+	previewUrl: "https://brainerai.vercel.app",
   },
 
   {
@@ -93,8 +93,8 @@ export const projectsData = [
 	  "Demonstrating proficiency in Python, Docker, Django, MySQL, DRF, signals, Celery, Locust, and Celery Beat, I showcase my ability to craft efficient and scalable RESTful APIs.",
 	tags: ["python", "docker", "django", "mysql", "GRF", "signals", "celery", "locust", "celerybeat"],
 	imageUrl: DjangoRESTAPI,
-	githubUrl: "#",
-	previewUrl: "#",
+	githubUrl: "https://github.com/im-py-dev/Django-Store-api",
+	previewUrl: "",
   },
 
 ] as const;
