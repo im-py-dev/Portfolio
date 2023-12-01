@@ -55,6 +55,7 @@ export default function Project({
 				<a
 				href={githubUrl}
 				type="submit"
+				target="_blank"
 				className="mt-4 group flex items-center justify-center gap-2 h-[2.8rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65">
 				Github{" "}
 				  <FaGithub className="text-xl opacity-70 transition-all group-hover:scale-[1.05]" />{" "}
@@ -65,6 +66,7 @@ export default function Project({
 				<a
 				  href={previewUrl}
 				  type="submit"
+				  target="_blank"
 				  className="ml-[1rem] mt-4 group flex items-center justify-center gap-2 h-[2.8rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10 disabled:scale-100 disabled:bg-opacity-65">
 				  Preview{" "}
 				  <FaExternalLinkAlt className="text-xl opacity-70 transition-all group-hover:scale-[1.05]" />{" "}
