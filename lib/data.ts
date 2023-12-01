@@ -9,6 +9,7 @@ import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 import SaaSAIPlatform from "@/public/SaaS AI Platform.png";
+import FlaskTasksManager from "@/public/FlaskTasksManager.png";
 import DjangoRESTAPI from "@/public/Django REST API.png";
 
 
@@ -88,13 +89,13 @@ export const projectsData = [
   },
 
   {
-	title: "Django Store API",
+	title: "Flask Tasks Manager",
 	description:
-	  "Demonstrating proficiency in Python, Docker, Django, MySQL, DRF, signals, Celery, Locust, and Celery Beat, I showcase my ability to craft efficient and scalable RESTful APIs.",
+	  "A simple Flask application showcasing my skills in web development and full-stack technologies. This project includes user authentication, notes management, and follows high code structure practices.",
 	tags: ["python", "docker", "django", "mysql", "GRF", "signals", "celery", "locust", "celerybeat"],
-	imageUrl: DjangoRESTAPI,
-	githubUrl: "https://github.com/im-py-dev/Django-Store-api",
-	previewUrl: "",
+	imageUrl: FlaskTasksManager,
+	githubUrl: "https://github.com/im-py-dev/flask-task-manager",
+	previewUrl: "http://23.128.64.21:8000",
   },
 
 ] as const;
