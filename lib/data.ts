@@ -92,7 +92,7 @@ export const projectsData = [
 	tags: ["python", "docker", "django", "mysql", "GRF", "signals", "celery", "locust", "celerybeat"],
 	imageUrl: DjangoRESTAPI,
 	githubUrl: "https://github.com/im-py-dev/Django-Store-api",
-	previewUrl: "",
+	previewUrl: "http://127.0.0.1:8001",
   },
   
   {
